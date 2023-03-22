@@ -43,6 +43,14 @@ input.order:hover {
   background-color: rgba(255, 208, 0, 0.717);
 }
 
+input[value="CLR"] {
+  color: white;
+  background-color: red;
+}
+input[value="CE"] {
+  color: white;
+  background-color: red;
+}
 input[value="C"] {
   color: black;
   background-color: white;
@@ -51,11 +59,15 @@ input[value="C"]:hover {
   background-color: rgb(174, 3, 3);
   color: white;
 }
+.red{
+  background-color: red;
+  color: white;
+}
 
-@media (max-width:500px) {
+@media (max-width:700px) {
     .main_body {
         background-color: black;
-        padding: 8px 16px;
+        padding: 8px 10px;
         border-radius: 20px;
       }
     input[type="button"] {
@@ -70,8 +82,90 @@ input[value="C"]:hover {
       input.order {
         background-color: rgb(130, 107, 3);
       }
+      input[value="CLR"] {
+        color: white;
+        background-color: red;
+      }
+      input[value="CE"] {
+        color: white;
+        background-color: red;
+      }
       input[value="C"] {
         color: black;
         background-color: white;
+      }
+}
+@media (max-width:500px) {
+    .main_body {
+        background-color: black;
+        border-radius: 20px;
+      }
+    input[type="button"] {
+        padding: 8px 16px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: rgba(96, 96, 96, 0.345);
+        color: white;
+        margin: 10px;
+      }
+      input.order {
+        background-color: rgb(130, 107, 3);
+      }
+      input[value="CLR"] {
+        color: white;
+        background-color: red;
+        font-size: 16px;
+        padding: 5px;
+      }
+      input[value="CE"] {
+        color: white;
+        background-color: red;
+        font-size: 16px;
+        padding: 5px;
+      }
+      input[value="C"] {
+        color: black;
+        background-color: white;
+      }
+}
+@media (max-width:400px) {
+  .title {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+  }
+    .main_body {
+        background-color: black;
+        border-radius: 20px;
+      }
+      .main_body table {
+        /* border: 2px solid black; */
+        background-color: black;
+        padding: 0px;
+        border-radius: 20px;
+      }
+      .screen {
+        width: 190px;
+        padding: 5px;
+        font-size: 25px;
+        border-radius: 8px;
+        border: none;
+      }
+    input.inth {
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 0;
+      }
+      input.order {
+        background-color: rgb(130, 107, 3);
+      }
+      input[value="CLR"] {
+        color: white;
+        background-color: red;
+      }
+      input[value="CE"] {
+        color: white;
+        background-color: red;
       }
 }
